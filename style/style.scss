@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #203361;
+    background-image: url(/CAT201-2-main/image/background.jpg);
+    background-size: cover;
+}
+
+.logo{
+    width: 30rem;
+    margin: 2rem auto 2rem 2.5rem;
+}
+
+.hero-section{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.intro-paragraph{
+    color: white;
+    padding-bottom: 4rem;
+    h1{
+        font-family: poppins; /* * ! download font*/
+        padding-bottom: .5rem;
+        font-size: 4rem;
+        color: rgb(252, 163, 17);
+    }
+    p{
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+}
+
+.choose-file-header{
+    display: flex;
+    align-items: center;
+    h3{
+        color: white;
+        padding-left: .3rem;
+        font-size: 3rem;
+    }
+}
+
+.insert-file-container{
+    width: 100%;
+    color: white;
+    border: dashed 5px rgb(252, 163, 17);
+    border-radius: 3rem;
+    height: 16rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    input[type="file"] {
+        position: absolute;
+        z-index: -1;
+        top: 15px;
+        left: 20px;
+        // font-size: 100rem;
+        // color: #b8b8b8;
+      }
+      .button-wrap {
+        position: relative;
+      }
+      .button {
+        display: flex;
+        background-color: rgb(252, 163, 17);
+        border-radius: 3rem;
+        border: 4px double #cccccc;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        padding: 8px;
+        width: 30rem;
+        height: 7rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        
+      }
+      .button:hover {
+        background-color: #9f6624;
+      }
+
+      .upload-icon{
+        margin-left: 3rem;
+        width: 4rem;
+      }
+}
+
+
+.receive-header{
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    h3{
+        color: white;
+        padding-left: .3rem;
+        font-size: 3rem;
+    }
+}
+
+.receive-file-container{
+    width: 100%;
+    color: white;
+    border-radius: 3rem;
+    height: 7rem;
+    padding-top: 1rem;
+    // margin-bottom: 4rem;
+    background-color: rgb(252, 163, 17);
+    text-align: center;
+}
+
+.receive{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+
+
+
+
+@media only screen and (min-width:1030px){
+    .logo{
+        width: 40rem;
+    }
+    .hero-section{
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    .insert-file-container{
+        width: 70%;
+        margin: auto;
+        padding: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon-insert{
+            width: 13rem;
+        }
+        
+        // h4{
+        //     font-size: 3rem;
+        // }
+        input[type="file"] {
+            position: absolute;
+            z-index: -1;
+            top: 15px;
+            left: 20px;
+            font-size: 17px;
+            color: #b8b8b8;
+          }
+          .button-wrap {
+            position: relative;
+          }
+          .button {
+            display: flex;
+            background-color: rgb(252, 163, 17);
+            border-radius: 3rem;
+            border: 4px double #cccccc;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            padding: 8px;
+            width: 30rem;
+            height: 8rem;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            
+          }
+          .button:hover {
+            background-color: #9f6624;
+          }
+    
+          .upload-icon{
+            margin-left: 3rem;
+            width: 4rem;
+          }
+
+    }
+
+    .receive-file-container{
+        width: 70%;
+        margin: auto;
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon-insert{
+            width: 13rem;
+        }
+        
+        h1{
+            font-size: 3rem;
+        }
+
+    }
+}
+
+@media only screen and (min-width:1630px){
+    .hero-section{
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+    .insert-file-container{
+        width: 70%;
+        margin: auto;
+        padding: 13rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon-insert{
+            width: 13rem;
+        }
+        
+        h4{
+            font-size: 3rem;
+        }
+
+    }
+
+    .receive-file-container{
+        width: 70%;
+        margin: auto;
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon-insert{
+            width: 13rem;
+        }
+        
+        h1{
+            font-size: 3rem;
+        }
+
+    }
+}
